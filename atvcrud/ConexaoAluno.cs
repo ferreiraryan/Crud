@@ -18,7 +18,7 @@ namespace atvcrud
         {
             try
             {
-                comn = new MySqlConnection("Persist Security info=false; server=localhost; database=bdescola; user=root; pwd=Rv290407;");
+                comn = new MySqlConnection("Persist Security info=false; server=localhost; database=bdescola; user=root; pwd=****;");
                 comn.Open();
                 //MessageBox.Show("Conectando");
             }
