@@ -22,23 +22,48 @@ This project was developed using the following technologies:
 
 ## 📥 Installation
 
-```sh
-# Clone this repository
-$ git clone https://github.com/ferreiraryan/MasterMind-with-Screen
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/yourusername/projectname.git
+   cd projectname
+   ```
 
-# Enter the directory
-$ cd projectname
+2. **Open the project in Visual Studio**
+   - Launch **Visual Studio**.
+   - Click on **Open a project or solution**.
+   - Navigate to the cloned repository folder and open the `.sln` file.
 
-# Install dependencies
-$ pip install -r requirements.txt
+3. **Restore NuGet Packages**
+   - In **Solution Explorer**, right-click on the solution and select **Restore NuGet Packages**.
 
-# Run the project
-$ python UiGame.py
-```
+3. **Start the MySql Server**
+   
+5. - Start the MySql server and enter the following commands:
+     ```sh
+     CREATE DATABASE bdescola;
+     USE bdescola;
+     CREATE TABLE tabela (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      nome VARCHAR(100) NOT NULL,
+      idade INT NOT NULL,
+      unidade CHAR(1) NOT NULL,
+      serie INT NOT NULL,
+      turma VARCHAR(10) NOT NULL
+     );
+     ```
+     
+6. - In the file **ConexaoAluno.cs** change:
+     ```sh
+     "comn = new MySqlConnection("Persist Security info=false; server=localhost; database=bdescola; user=root; pwd=****;");"
+     ```
+     To your server settings!
 
-## 🛠️ Usage
+7. **Build and Run the Project**
+   - Click on **Build > Build Solution** (or press `Ctrl+Shift+B`).
+   - Click **Start** (`F5`) to run the application.
 
-That's simple—just run the game and enjoy! 😁
+Now, the project should be up and running! 🚀
+
 
 ## 🤝 Contributing
 
@@ -55,5 +80,3 @@ Feel free to contribute! Just follow these steps:
 - **Ryan** - [ryanferreira4883@gmail.com](mailto:ryanferreira4883@gmail.com)
 - **GitHub** - [https://github.com/ferreiraryan](https://github.com/ferreiraryan)
 - **LinkedIn** - [https://www.linkedin.com/in/ferryan/](https://www.linkedin.com/in/ferryan/)
-
-
